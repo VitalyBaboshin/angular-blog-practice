@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-blog-prac"
+    }
+  },
+  "defaultProject": "angular-blog-prac",
+  "cli": {
+    "analytics": false
+  }
 }
