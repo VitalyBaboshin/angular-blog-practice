@@ -6,14 +6,15 @@ import {catchError, tap} from "rxjs/operators";
 import {environment} from "../../../../environments/environment";
 import {FbAuthResponse, User} from "../../../shared/interfaces";
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export class AuthServices {
 
    //Это стрим (error$ - $ обозначил что это стрим)
    public error$: Subject<string> = new Subject<string>();
-   // public errorVisible: boolean = false;
 
-   constructor(private http: HttpClient) {}
+   constructor(private http: HttpClient) {
+   }
+
 
    get token(): string {
      const expDate = new Date(localStorage.getItem('fb-token-exp'));
@@ -45,7 +46,6 @@ export class AuthServices {
 
    private handleError(error: HttpErrorResponse) {
      const {message} = error.error.error
-     // this.errorVisible = true;
      switch (message) {
        case 'INVALID_EMAIL':
          this.error$.next('Неверный email')
@@ -57,12 +57,6 @@ export class AuthServices {
          this.error$.next('Не найден email')
          break
      }
-
-     // setTimeout(function () {
-     //   this.errorVisible = false
-     //   console.log(this.errorVisible)
-     //   console.log('asdsad')
-     // },1000)
 
      return throwError(error)
    }
