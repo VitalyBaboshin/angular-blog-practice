@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core'
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {User} from '../../shared/interfaces';
 import {AuthServices} from "../shared/services/auth.services";
-import {Router} from "@angular/router";
+import {ActivatedRoute, Params, Router} from "@angular/router";
 
 @Component({
   selector: 'app-login-page',
@@ -13,15 +13,26 @@ export class LoginPageComponent implements OnInit {
 
   form: FormGroup;
   submitted = false;
+  message: string
 
   constructor(
     public auth: AuthServices,
     // для редиректа
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute
   ) {
   }
 
   ngOnInit() {
+    this.route.queryParams.subscribe((params: Params) => {
+      if (params['loginAgain']) {
+        this.message = 'Пожалуйста введите данные'
+      } else if (params['authFailed']) {
+        this.message = 'Сессия истекла, введите данные снова'
+      }
+    })
+
+
     this.form = new FormGroup({
       email: new FormControl(null, [
         Validators.required,
