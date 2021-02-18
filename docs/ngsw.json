@@ -1,0 +1,101 @@
+{
+  "configVersion": 1,
+  "timestamp": 1613657990225,
+  "index": "/angular-blog-practice/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/angular-blog-practice/5-es2015.8b0d78237a0ffaa60f3a.js",
+        "/angular-blog-practice/5-es5.8b0d78237a0ffaa60f3a.js",
+        "/angular-blog-practice/6-es2015.20983c896ee80e3441f3.js",
+        "/angular-blog-practice/6-es5.20983c896ee80e3441f3.js",
+        "/angular-blog-practice/favicon.ico",
+        "/angular-blog-practice/index.html",
+        "/angular-blog-practice/main-es2015.7dea7c1a9a7a658a8d48.js",
+        "/angular-blog-practice/main-es5.7dea7c1a9a7a658a8d48.js",
+        "/angular-blog-practice/manifest.webmanifest",
+        "/angular-blog-practice/polyfills-es2015.690002c25ea8557bb4b0.js",
+        "/angular-blog-practice/polyfills-es5.9e286f6d9247438cbb02.js",
+        "/angular-blog-practice/runtime-es2015.a806e45eaca2f8b92024.js",
+        "/angular-blog-practice/runtime-es5.a806e45eaca2f8b92024.js",
+        "/angular-blog-practice/styles.2fd7fb35c6b31c014fa6.css"
+      ],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Roboto"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/angular-blog-practice/assets/icons/icon-128x128.png",
+        "/angular-blog-practice/assets/icons/icon-144x144.png",
+        "/angular-blog-practice/assets/icons/icon-152x152.png",
+        "/angular-blog-practice/assets/icons/icon-192x192.png",
+        "/angular-blog-practice/assets/icons/icon-384x384.png",
+        "/angular-blog-practice/assets/icons/icon-512x512.png",
+        "/angular-blog-practice/assets/icons/icon-72x72.png",
+        "/angular-blog-practice/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "firebase-posts",
+      "patterns": [
+        "https:\\/\\/angular-blog-practice\\.firebaseio\\.com\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 5,
+      "maxAge": 0,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/angular-blog-practice/5-es2015.8b0d78237a0ffaa60f3a.js": "3ac222dfe654ca9a0ffd704688813ded33012588",
+    "/angular-blog-practice/5-es5.8b0d78237a0ffaa60f3a.js": "e1b74f94b2f169221ff642fad9dfb084703dfe56",
+    "/angular-blog-practice/6-es2015.20983c896ee80e3441f3.js": "78029d05b6c2103b51769f96af0bf5ce552306e6",
+    "/angular-blog-practice/6-es5.20983c896ee80e3441f3.js": "e8c19148010ddc8ac24f2d7806e643699084892b",
+    "/angular-blog-practice/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/angular-blog-practice/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/angular-blog-practice/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/angular-blog-practice/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/angular-blog-practice/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/angular-blog-practice/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/angular-blog-practice/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/angular-blog-practice/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/angular-blog-practice/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/angular-blog-practice/index.html": "a01a10e4b9c645e661d01b8283f0e4768496bed2",
+    "/angular-blog-practice/main-es2015.7dea7c1a9a7a658a8d48.js": "b54d45d74b611317afba86825f9088e1a1799040",
+    "/angular-blog-practice/main-es5.7dea7c1a9a7a658a8d48.js": "cbef790ca9c69d34e3a23371f190410ba526fff1",
+    "/angular-blog-practice/manifest.webmanifest": "d1f726739d26b07c877e6aa3bfbd7e8ff7affca5",
+    "/angular-blog-practice/polyfills-es2015.690002c25ea8557bb4b0.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "/angular-blog-practice/polyfills-es5.9e286f6d9247438cbb02.js": "89222a28dbabb780fc372d33834080e0cd3083d9",
+    "/angular-blog-practice/runtime-es2015.a806e45eaca2f8b92024.js": "c33ba08ce447b7bd035ffbfecc4baa519a26d05c",
+    "/angular-blog-practice/runtime-es5.a806e45eaca2f8b92024.js": "ccb620148c90684782aad0f17faff14c5dd72afd",
+    "/angular-blog-practice/styles.2fd7fb35c6b31c014fa6.css": "6a9de7e0362377bd0c0b6605baea0066299bdb87"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
